@@ -16,7 +16,7 @@ spec:
   type: openapi
   description: awesomest
   system: maelarge
-  owner: maelarge
+  owner: castle
   location:
     path: /api-docs
     baseURL:

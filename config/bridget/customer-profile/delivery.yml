@@ -52,7 +52,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.h2o-2-1444.h2o.vmware.com/tap/supply-chains/customer-profile-bridget@sha256:51e86e7b14911a3ee24ba856c9c51d6a2034fd4d137d8b8a2789d22ed922186b
+        image: harbor.h2o-2-1444.h2o.vmware.com/tap/supply-chains/customer-profile-bridget@sha256:7c4e77cf97fba1b8b9339f977e109f82cb2ff63fa64a0ce0935110ebf486ea50
         livenessProbe:
           httpGet:
             path: /livez

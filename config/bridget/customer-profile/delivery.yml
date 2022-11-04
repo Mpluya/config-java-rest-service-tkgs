@@ -43,6 +43,7 @@ spec:
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: customer-profile
         conventions.apps.tanzu.vmware.com/framework: spring-boot
+        pipeline-tag: customer-profile-test-pipeline
         services.conventions.apps.tanzu.vmware.com/postgres: workload
         tanzu.app.live.view: "true"
         tanzu.app.live.view.application.actuator.port: "8081"

@@ -9,9 +9,7 @@ metadata:
     apis.apps.tanzu.vmware.com/register-api: "true"
     app.kubernetes.io/part-of: customer-profile
     apps.tanzu.vmware.com/has-tests: "true"
-    apps.tanzu.vmware.com/language: java
     apps.tanzu.vmware.com/workload-type: web
-    pipeline-tag: customer-profile-test-pipeline
     app.kubernetes.io/component: run
     carto.run/workload-name: customer-profile
 spec:
@@ -39,11 +37,9 @@ spec:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: customer-profile
         apps.tanzu.vmware.com/has-tests: "true"
-        apps.tanzu.vmware.com/language: java
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: customer-profile
         conventions.apps.tanzu.vmware.com/framework: spring-boot
-        pipeline-tag: customer-profile-test-pipeline
         services.conventions.apps.tanzu.vmware.com/postgres: workload
         tanzu.app.live.view: "true"
         tanzu.app.live.view.application.actuator.port: "8081"
@@ -54,7 +50,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.h2o-2-1444.h2o.vmware.com/tap/supply-chains/customer-profile-bridget@sha256:7c4e77cf97fba1b8b9339f977e109f82cb2ff63fa64a0ce0935110ebf486ea50
+        image: harbor.h2o-2-1249.h2o.vmware.com/tap/supply-chains/customer-profile-bridget@sha256:ef6fe84adcef132d0f728db5a0c0cee7a3d5a1ff080b1a62d4fc28a86bb48ca6
         livenessProbe:
           httpGet:
             path: /livez
